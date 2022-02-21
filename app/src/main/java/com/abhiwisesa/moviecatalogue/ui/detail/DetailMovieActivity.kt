@@ -5,8 +5,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.abhiwisesa.core.domain.model.Movie
 import com.abhiwisesa.moviecatalogue.R
-import com.abhiwisesa.moviecatalogue.core.domain.model.Movie
 import com.abhiwisesa.moviecatalogue.databinding.ActivityDetailMovieBinding
 import com.abhiwisesa.moviecatalogue.databinding.ContentDetailMovieBinding
 import com.bumptech.glide.Glide

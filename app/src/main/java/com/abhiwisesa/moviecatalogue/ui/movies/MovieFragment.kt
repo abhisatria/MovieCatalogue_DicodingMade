@@ -7,7 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import com.abhiwisesa.moviecatalogue.data.source.Resource
+import com.abhiwisesa.core.data.Resource
+import com.abhiwisesa.core.ui.MovieAdapter
 import com.abhiwisesa.moviecatalogue.databinding.FragmentMovieBinding
 import com.abhiwisesa.moviecatalogue.ui.detail.DetailMovieActivity
 import org.koin.android.viewmodel.ext.android.viewModel

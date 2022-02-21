@@ -2,10 +2,10 @@ package com.abhiwisesa.moviecatalogue.data.source
 
 import androidx.lifecycle.LiveData
 import androidx.paging.PagedList
-import com.abhiwisesa.moviecatalogue.data.source.local.entity.MovieEntity
-import com.abhiwisesa.moviecatalogue.data.source.remote.network.ApiResponse
-import com.abhiwisesa.moviecatalogue.data.source.remote.response.MovieResponse
-import com.abhiwisesa.moviecatalogue.data.source.remote.response.TvShowResponse
+import com.abhiwisesa.core.data.source.local.entity.MovieEntity
+import com.abhiwisesa.core.data.source.remote.network.ApiResponse
+import com.abhiwisesa.core.data.source.remote.response.MovieResponse
+import com.abhiwisesa.core.data.source.remote.response.TvShowResponse
 
 interface MovieDataSource {
     fun getListTvShow(): LiveData<ApiResponse<List<TvShowResponse>>>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.abhiwisesa.core.ui.FavoriteAdapter
 import com.abhiwisesa.moviecatalogue.databinding.FragmentListFavoriteBinding
 import com.abhiwisesa.moviecatalogue.ui.detail.DetailMovieActivity
 import org.koin.android.viewmodel.ext.android.viewModel

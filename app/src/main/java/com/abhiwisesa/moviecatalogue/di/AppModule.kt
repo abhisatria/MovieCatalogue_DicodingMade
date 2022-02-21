@@ -1,7 +1,7 @@
 package com.abhiwisesa.moviecatalogue.di
 
-import com.abhiwisesa.moviecatalogue.core.domain.usecase.MovieInteractor
-import com.abhiwisesa.moviecatalogue.core.domain.usecase.MovieUseCase
+import com.abhiwisesa.core.domain.usecase.MovieInteractor
+import com.abhiwisesa.core.domain.usecase.MovieUseCase
 import com.abhiwisesa.moviecatalogue.ui.detail.DetailViewModel
 import com.abhiwisesa.moviecatalogue.ui.favorite.FavoriteViewModel
 import com.abhiwisesa.moviecatalogue.ui.movies.MovieViewModel

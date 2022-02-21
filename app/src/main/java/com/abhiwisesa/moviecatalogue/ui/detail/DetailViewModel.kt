@@ -2,8 +2,8 @@ package com.abhiwisesa.moviecatalogue.ui.detail
 
 import android.util.Log
 import androidx.lifecycle.*
-import com.abhiwisesa.moviecatalogue.core.domain.model.Movie
-import com.abhiwisesa.moviecatalogue.core.domain.usecase.MovieUseCase
+import com.abhiwisesa.core.domain.model.Movie
+import com.abhiwisesa.core.domain.usecase.MovieUseCase
 
 class DetailViewModel(private val movieUseCase: MovieUseCase) : ViewModel() {
     private val _movieId = MutableLiveData<String>()

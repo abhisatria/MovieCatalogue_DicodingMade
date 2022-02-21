@@ -32,6 +32,12 @@
         <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/app/src/main/res/menu/bottom_nav_menu.xml" value="0.26153846153846155" />
         <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/app/src/main/res/menu/menu_detail.xml" value="0.264" />
         <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/app/src/main/res/menu/menu_sort.xml" value="0.264" />
+        <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/core/src/main/res/drawable/ic_broken_image_black.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/core/src/main/res/drawable/ic_error.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/core/src/main/res/drawable/ic_loading.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/core/src/main/res/drawable/ic_refresh_black.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/core/src/main/res/layout/items_favorite_movie.xml" value="0.1375" />
+        <entry key="..\:/Users/abhiw/Desktop/Dicoding/MovieCatalogue/core/src/main/res/layout/items_movie.xml" value="0.1375" />
       </map>
     </option>
   </component>

@@ -2,7 +2,7 @@ package com.abhiwisesa.moviecatalogue.ui.tv_show
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.abhiwisesa.moviecatalogue.core.domain.usecase.MovieUseCase
+import com.abhiwisesa.core.domain.usecase.MovieUseCase
 
 class TvShowViewModel(movieUseCase: MovieUseCase): ViewModel() {
 

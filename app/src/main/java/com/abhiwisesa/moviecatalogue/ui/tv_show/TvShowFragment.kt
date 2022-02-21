@@ -8,10 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import com.abhiwisesa.moviecatalogue.R
-import com.abhiwisesa.moviecatalogue.data.source.Resource
+import com.abhiwisesa.core.data.Resource
+import com.abhiwisesa.core.ui.MovieAdapter
 import com.abhiwisesa.moviecatalogue.databinding.FragmentTvShowBinding
 import com.abhiwisesa.moviecatalogue.ui.detail.DetailMovieActivity
-import com.abhiwisesa.moviecatalogue.ui.movies.MovieAdapter
 import com.abhiwisesa.moviecatalogue.ui.movies.MovieFragment
 import org.koin.android.viewmodel.ext.android.viewModel
 
