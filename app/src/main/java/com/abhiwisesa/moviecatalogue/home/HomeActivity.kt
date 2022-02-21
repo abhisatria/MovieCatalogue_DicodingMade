@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.ui.home
+package com.abhiwisesa.moviecatalogue.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

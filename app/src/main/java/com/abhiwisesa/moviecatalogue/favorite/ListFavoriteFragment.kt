@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.ui.favorite
+package com.abhiwisesa.moviecatalogue.favorite
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.abhiwisesa.core.ui.FavoriteAdapter
 import com.abhiwisesa.moviecatalogue.databinding.FragmentListFavoriteBinding
-import com.abhiwisesa.moviecatalogue.ui.detail.DetailMovieActivity
+import com.abhiwisesa.moviecatalogue.detail.DetailMovieActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ListFavoriteFragment : Fragment() {

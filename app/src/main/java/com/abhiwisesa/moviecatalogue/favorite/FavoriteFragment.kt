@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.ui.favorite
+package com.abhiwisesa.moviecatalogue.favorite
 
 import android.os.Bundle
 import android.view.*

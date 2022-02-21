@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.ui.detail
+package com.abhiwisesa.moviecatalogue.detail
 
 import android.util.Log
 import androidx.lifecycle.*

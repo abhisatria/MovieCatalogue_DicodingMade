@@ -13,15 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCatalogue">
         <activity
-            android:name="com.abhiwisesa.moviecatalogue.ui.detail.DetailMovieActivity"
+            android:name="com.abhiwisesa.moviecatalogue.detail.DetailMovieActivity"
             android:exported="false"
             android:label="@string/detail_movie"
             android:theme="@style/Theme.MovieCatalogue.NoActionBar" />
         <activity
-            android:name=".ui.home.HomeActivity"
+            android:name=".home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/NoActionBarTheme">
             <intent-filter>

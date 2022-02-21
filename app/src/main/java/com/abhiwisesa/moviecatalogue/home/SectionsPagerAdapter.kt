@@ -1,14 +1,14 @@
-package com.abhiwisesa.moviecatalogue.ui.home
+package com.abhiwisesa.moviecatalogue.home
 
 import android.content.Context
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.abhiwisesa.moviecatalogue.ui.movies.MovieFragment
+import com.abhiwisesa.moviecatalogue.movies.MovieFragment
 import com.abhiwisesa.moviecatalogue.R
-import com.abhiwisesa.moviecatalogue.ui.favorite.FavoriteFragment
-import com.abhiwisesa.moviecatalogue.ui.tv_show.TvShowFragment
+import com.abhiwisesa.moviecatalogue.favorite.FavoriteFragment
+import com.abhiwisesa.moviecatalogue.tv_show.TvShowFragment
 
 class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {

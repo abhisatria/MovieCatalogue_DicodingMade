@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.ui
+package com.abhiwisesa.moviecatalogue
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.abhiwisesa.moviecatalogue.databinding.ActivitySplashBinding
-import com.abhiwisesa.moviecatalogue.ui.home.HomeActivity
+import com.abhiwisesa.moviecatalogue.home.HomeActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

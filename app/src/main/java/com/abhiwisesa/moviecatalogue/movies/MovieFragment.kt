@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.ui.tv_show
+package com.abhiwisesa.moviecatalogue.movies
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,27 +7,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import com.abhiwisesa.moviecatalogue.R
 import com.abhiwisesa.core.data.Resource
 import com.abhiwisesa.core.ui.MovieAdapter
-import com.abhiwisesa.moviecatalogue.databinding.FragmentTvShowBinding
-import com.abhiwisesa.moviecatalogue.ui.detail.DetailMovieActivity
-import com.abhiwisesa.moviecatalogue.ui.movies.MovieFragment
+import com.abhiwisesa.moviecatalogue.databinding.FragmentMovieBinding
+import com.abhiwisesa.moviecatalogue.detail.DetailMovieActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class TvShowFragment : Fragment() {
 
-    private var _fragmentTvShowBinding: FragmentTvShowBinding? = null
-    private val binding get() = _fragmentTvShowBinding
+class MovieFragment : Fragment() {
 
-    private val tvShowViewModel: TvShowViewModel by viewModel()
+    private var _fragmentMovieBinding: FragmentMovieBinding? = null
+    private val binding get() = _fragmentMovieBinding
+    private val mainViewModel: MovieViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _fragmentTvShowBinding = FragmentTvShowBinding.inflate(layoutInflater, container, false)
+        _fragmentMovieBinding = FragmentMovieBinding.inflate(layoutInflater, container, false)
         return binding?.root
     }
 
@@ -41,12 +39,12 @@ class TvShowFragment : Fragment() {
                 startActivity(intent)
             }
 
-            with(binding?.rvTvShow) {
-                this?.layoutManager = GridLayoutManager(context,2)
+            with(binding?.rvMovie) {
+                this?.layoutManager = GridLayoutManager(context, 2)
                 this?.setHasFixedSize(true)
             }
 
-            tvShowViewModel.getListTvShow.observe(viewLifecycleOwner    , { result ->
+            mainViewModel.getListMovie.observe(requireActivity(), { result ->
                 if (result != null) {
                     when (result) {
                         is Resource.Loading -> {
@@ -60,7 +58,7 @@ class TvShowFragment : Fragment() {
                                     showErrorMessage(PLACEHOLDER_NO_DATA)
                                 }
                                 adapter.setMovies(userData)
-                                binding?.rvTvShow?.adapter = adapter
+                                binding?.rvMovie?.adapter = adapter
                             }
 
                         }
@@ -78,40 +76,34 @@ class TvShowFragment : Fragment() {
         binding?.noDataTextView?.visibility = View.GONE
         if (isLoading) {
             binding?.apply {
-                rvTvShow.visibility = View.GONE
-                tvShowShimmerFrameLayout.startShimmer()
-                tvShowShimmerFrameLayout.visibility = View.VISIBLE
+                rvMovie.visibility = View.GONE
+                movieShimmerFrameLayout.startShimmer()
+                movieShimmerFrameLayout.visibility = View.VISIBLE
             }
         } else {
             binding?.apply {
-                rvTvShow.visibility = View.VISIBLE
-                tvShowShimmerFrameLayout.visibility = View.GONE
-                tvShowShimmerFrameLayout.stopShimmer()
+                rvMovie.visibility = View.VISIBLE
+                movieShimmerFrameLayout.visibility = View.GONE
+                movieShimmerFrameLayout.stopShimmer()
             }
         }
     }
 
-//    private fun setListData(userData: List<Movie>) {
-//        val adapter = TvShowAdapter()
-//        adapter.setMovies(userData)
-//        binding?.rvTvShow?.adapter = adapter
-//    }
 
     private fun showErrorMessage(message: String) {
         binding?.apply {
-            if(message != MovieFragment.PLACEHOLDER_NO_DATA)
-            {
-                noDataTextView.text = "${getString(R.string.error)}\n$message"
-            }
-            else{
+            if (message != PLACEHOLDER_NO_DATA) {
+                noDataTextView.text = "ERROR\n$message"
+            } else {
                 noDataTextView.text = message
             }
             noDataTextView.visibility = View.VISIBLE
-            rvTvShow.visibility = View.GONE
+            rvMovie.visibility = View.GONE
         }
     }
 
     companion object {
         const val PLACEHOLDER_NO_DATA = "Nothing to show"
     }
+
 }

@@ -7,7 +7,7 @@
     style="@style/splashScreen"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ui.SplashActivity"
+    tools:context=".SplashActivity"
     android:paddingBottom="20dp">
 
 
