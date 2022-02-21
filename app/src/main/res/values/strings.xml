@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="movie_catalogue">Movie Catalogue</string>
+    <string name="find_your_favorite_movies">Find your favorite movies</string>
+    <string name="tv_show">TV Show</string>
+    <string name="movies">Movies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title">Title</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="dummy_title">This is Dummy Title</string>
+    <string name="dummy_text">this is dummy text</string>
+    <string name="genre">Genre</string>
+    <string name="language">Language</string>
+    <string name="image">image</string>
+    <string name="desc">Description</string>
+    <string name="description">Description</string>
+    <string name="released_date">Released date</string>
+    <string name="score">Score</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="detail_movie">Detail Movie</string>
+    <string name="movie">Movie</string>
+    <string name="favorite">Favorite</string>
+    <string name="z_a">Z-A</string>
+    <string name="a_z">A-Z</string>
+    <string name="newest">Newest</string>
+    <string name="oldest">Oldest</string>
+    <string name="error">ERROR</string>
+</resources>
