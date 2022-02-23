@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.abhiwisesa.moviecatalogue.movies.MovieFragment
 import com.abhiwisesa.moviecatalogue.R
-import com.abhiwisesa.moviecatalogue.favorite.FavoriteFragment
 import com.abhiwisesa.moviecatalogue.tv_show.TvShowFragment
 
 class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
@@ -17,7 +16,7 @@ class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
         when (position) {
             0 -> MovieFragment()
             1 -> TvShowFragment()
-            2 -> FavoriteFragment()
+//            2 -> FavoriteFragment()
             else -> Fragment()
         }
 

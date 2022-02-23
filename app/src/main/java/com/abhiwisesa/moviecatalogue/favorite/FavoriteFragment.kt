@@ -15,11 +15,12 @@ class FavoriteFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentFavoriteBinding.inflate(layoutInflater,container,false)
-        val sectionsPagerAdapter = FavoriteSectionsPagerAdapter(requireActivity())
-        binding.viewPagerFavorite.adapter = sectionsPagerAdapter
-        TabLayoutMediator(binding.tabs,binding.viewPagerFavorite) { tab, position ->
-            tab.text = resources.getString(FavoriteSectionsPagerAdapter.TAB_TITLES[position])
-        }.attach()
+//        val sectionsPagerAdapter =
+//            com.abhiwisesa.favorite.FavoriteSectionsPagerAdapter(requireActivity())
+//        binding.viewPagerFavorite.adapter = sectionsPagerAdapter
+//        TabLayoutMediator(binding.tabs,binding.viewPagerFavorite) { tab, position ->
+//            tab.text = resources.getString(com.abhiwisesa.favorite.FavoriteSectionsPagerAdapter.TAB_TITLES[position])
+//        }.attach()
 
         return binding.root
     }

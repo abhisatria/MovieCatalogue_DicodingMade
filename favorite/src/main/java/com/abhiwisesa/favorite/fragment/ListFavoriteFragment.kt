@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.favorite
+package com.abhiwisesa.favorite.fragment
 
 import android.content.Intent
 import android.os.Bundle

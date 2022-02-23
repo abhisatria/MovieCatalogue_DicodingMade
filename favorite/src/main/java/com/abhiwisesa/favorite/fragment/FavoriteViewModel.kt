@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.favorite
+package com.abhiwisesa.favorite.fragment
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData

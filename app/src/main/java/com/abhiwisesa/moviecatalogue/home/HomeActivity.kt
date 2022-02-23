@@ -1,5 +1,7 @@
 package com.abhiwisesa.moviecatalogue.home
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -30,9 +32,11 @@ class HomeActivity : AppCompatActivity() {
                     position = 1
                 }
                 R.id.favorite -> {
-                    supportActionBar?.title = getString(R.string.favorite)
-                    activityHomeBinding.viewPager.currentItem = 2
-                    position = 2
+//                    supportActionBar?.title = getString(R.string.favorite)
+//                    activityHomeBinding.viewPager.currentItem = 2
+//                    position = 2
+                    val uri = Uri.parse("moviescatalogue://favorite")
+                    startActivity(Intent(Intent.ACTION_VIEW, uri))
                 }
             }
             return@setOnItemSelectedListener false

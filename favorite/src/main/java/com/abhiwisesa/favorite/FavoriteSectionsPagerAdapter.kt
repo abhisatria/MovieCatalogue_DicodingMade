@@ -1,4 +1,4 @@
-package com.abhiwisesa.moviecatalogue.favorite
+package com.abhiwisesa.favorite
 
 
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.abhiwisesa.moviecatalogue.R
+import com.abhiwisesa.favorite.fragment.ListFavoriteFragment
 
 class FavoriteSectionsPagerAdapter(activity: FragmentActivity) :
     FragmentStateAdapter(activity) {
