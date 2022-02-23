@@ -25,34 +25,4 @@ class DetailViewModel(private val movieUseCase: MovieUseCase) : ViewModel() {
         Log.d("DetailViewModel","TESSSS")
         return movieUseCase.setFavoriteMovie(movie, newStatus)
     }
-
-//    val getDetailMovie: LiveData<ApiResponse<DetailMovieResponse>> = Transformations.switchMap(_movieId){
-//        movieRepository.getDetailMovie(it)
-//    }
-//    val getDetailShow: LiveData<ApiResponse<DetailTvShowResponse>> = Transformations.switchMap(_showId){
-//        movieRepository.getDetailTvShow(it)
-//    }
-
-//    fun getDummyMovie() : LiveData<DetailMovieResponse> {
-//        return movieRepository.getDummyMovie()
-//    }
-//
-//    fun getDummyShow() : LiveData<DetailTvShowResponse>{
-//        return movieRepository.getDummyShow()
-//    }
-//
-//    fun isMovieSaved(id:Int):LiveData<Boolean> = movieRepository.isMovieSaved(id)
-//
-//    fun saveMovie(movieEntity: MovieEntity) {
-//        viewModelScope.launch {
-//            movieRepository.saveMovieToFavorite(movieEntity)
-//        }
-//    }
-//
-//    fun deleteMovie(id: Int) {
-//        viewModelScope.launch {
-//            movieRepository.deleteMovieFromFavorite(id)
-//        }
-//    }
-
 }

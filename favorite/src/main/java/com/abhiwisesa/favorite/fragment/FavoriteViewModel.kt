@@ -10,14 +10,4 @@ class FavoriteViewModel(movieUseCase: MovieUseCase) : ViewModel() {
 
     val favoriteMovie = movieUseCase.getFavoriteMovie().asLiveData()
 
-
-//    val favoriteShowPaging = movieUseCase.getFavoriteShowPaging().asLiveData()
-//
-//    val favoriteMoviePaging = movieUseCase.getFavoriteMoviePaging().asLiveData()
-
-
-//    fun getFavoriteShow(sort: String): LiveData<PagedList<MovieEntity>> = movieRepository.getFavoriteShow(sort,false)
-//
-//    fun getFavoriteMovie(sort:String): LiveData<PagedList<MovieEntity>> = movieRepository.getFavoriteMovie(sort,true)
-
 }

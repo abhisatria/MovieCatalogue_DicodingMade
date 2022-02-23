@@ -12,21 +12,6 @@ import kotlinx.coroutines.flow.flowOn
 
 class RemoteDataSource(private val apiService: ApiService) {
 
-//
-//    fun getListTvShow(): ArrayList<ResultsItem> {
-//        EspressoIdlingResource.increment()
-//        val result = ArrayList<ResultsItem>()
-//        handler.postDelayed(
-//            {
-//                result.addAll(DataDummy.generateDummyTvShow())
-//                EspressoIdlingResource.decrement()
-//            },
-//            SERVICE_LATENCY_IN_MILLIS
-//        )
-//        return result
-//    }
-
-
     suspend fun getListShow(): Flow<ApiResponse<List<TvShowResponse>>> {
 
         return flow {
@@ -62,54 +47,7 @@ class RemoteDataSource(private val apiService: ApiService) {
                 Log.e("RemoteDataSource", e.toString())
             }
         }.flowOn(Dispatchers.IO)
-//        EspressoIdlingResource.increment()
-//        val result = ArrayList<MovieInList>()
-//        handler.postDelayed(
-//            {
-//                result.addAll(DataDummy.generateDummyMovies())
-//                EspressoIdlingResource.decrement()
-//            },
-//            SERVICE_LATENCY_IN_MILLIS
-//        )
-//        return result
     }
 
-//    fun getListMovie(): ArrayList<MovieInList> {
-//        EspressoIdlingResource.increment()
-//        val result = ArrayList<MovieInList>()
-//        handler.postDelayed(
-//            {
-//                result.addAll(DataDummy.generateDummyMovies())
-//                EspressoIdlingResource.decrement()
-//            },
-//            SERVICE_LATENCY_IN_MILLIS
-//        )
-//        return result
-//    }
-//
-//    fun getTvShow(): DetailTvShowResponse?{
-//        EspressoIdlingResource.increment()
-//        var result : DetailTvShowResponse? = null
-//        handler.postDelayed(
-//            {
-//                result = DataDummy.generateDummyDetailShow()
-//                EspressoIdlingResource.decrement()
-//            },
-//            SERVICE_LATENCY_IN_MILLIS
-//        )
-//        return result
-//    }
-//    fun getMovie(): DetailMovieResponse?{
-//        EspressoIdlingResource.increment()
-//        var result : DetailMovieResponse? = null
-//        handler.postDelayed(
-//            {
-//                result = DataDummy.generateDummyDetailMovie()
-//                EspressoIdlingResource.decrement()
-//            },
-//            SERVICE_LATENCY_IN_MILLIS
-//        )
-//        return result
-//    }
 
 }

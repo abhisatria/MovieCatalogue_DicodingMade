@@ -7,6 +7,4 @@ import com.abhiwisesa.core.domain.usecase.MovieUseCase
 class TvShowViewModel(movieUseCase: MovieUseCase): ViewModel() {
 
     val getListTvShow = movieUseCase.getListTvShow().asLiveData()
-
-//    fun getDummyTvShow(): LiveData<List<ResultsItem>> = movieRepository.getDummyAllTvShow()
 }

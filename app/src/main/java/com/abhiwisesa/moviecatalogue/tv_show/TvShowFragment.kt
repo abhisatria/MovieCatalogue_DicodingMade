@@ -91,12 +91,6 @@ class TvShowFragment : Fragment() {
         }
     }
 
-//    private fun setListData(userData: List<Movie>) {
-//        val adapter = TvShowAdapter()
-//        adapter.setMovies(userData)
-//        binding?.rvTvShow?.adapter = adapter
-//    }
-
     private fun showErrorMessage(message: String) {
         binding?.apply {
             if(message != MovieFragment.PLACEHOLDER_NO_DATA)

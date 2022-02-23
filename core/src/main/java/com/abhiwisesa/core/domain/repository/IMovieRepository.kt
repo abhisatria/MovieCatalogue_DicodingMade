@@ -10,13 +10,6 @@ interface IMovieRepository {
 
     fun getFavoriteMovie(): Flow<List<Movie>>
     fun getFavoriteShow(): Flow<List<Movie>>
-//    fun getFavoriteMoviePaging(): Flow<PagingData<Movie>>
-//    fun getFavoriteShowPaging(): Flow<PagingData<Movie>>
-
-//    fun getAllTourism(): Flow<Resource<List<ResultsItem>>>
-
-//    fun getFavoriteTourism(): Flow<List<Tourism>>
-//
     fun setFavoriteMovie(movie: Movie, state: Boolean)
 
 }

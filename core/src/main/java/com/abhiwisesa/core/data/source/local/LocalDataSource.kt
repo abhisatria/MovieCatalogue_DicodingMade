@@ -10,31 +10,6 @@ class LocalDataSource(private val mMovieDao: MovieDao) {
     fun getALlShow(): Flow<List<MovieEntity>> = mMovieDao.getAllShow()
 
     fun getFavoriteMovie(): Flow<List<MovieEntity>> = mMovieDao.getFlowFavoriteMovie()
-//    fun getFavoriteMoviePaging(): Flow<PagingData<MovieEntity>> {
-//        val pager = Pager(
-//            PagingConfig(
-//                pageSize = 10,
-//                enablePlaceholders = true,
-//                maxSize = 200
-//            )
-//        ) {
-//            mMovieDao.getFavoriteMovie()
-//        }.flow
-//        return pager
-//    }
-
-//    fun getFavoriteShowPaging(): Flow<PagingData<MovieEntity>> {
-//        val pager = Pager(
-//            PagingConfig(
-//                pageSize = 10,
-//                enablePlaceholders = true,
-//                maxSize = 200
-//            )
-//        ) {
-//            mMovieDao.getFavoriteShow()
-//        }.flow
-//        return pager
-//    }
 
     fun getFavoriteShow(): Flow<List<MovieEntity>> = mMovieDao.getFlowFavoriteShow()
 

@@ -12,7 +12,6 @@ import java.util.ArrayList
 
 class FavoriteAdapter :
     RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
-//    PagingDataAdapter<Movie, FavoriteAdapter.FavoriteViewHolder>(DIFF_CALLBACK) {
     private var listMovies = ArrayList<Movie>()
     var onItemClick: ((Movie) -> Unit)? = null
 
@@ -63,32 +62,6 @@ class FavoriteAdapter :
 
     companion object {
         private const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/w500/"
-//        private val DIFF_CALLBACK: DiffUtil.ItemCallback<Movie> =
-//            object : DiffUtil.ItemCallback<Movie>() {
-//                override fun areItemsTheSame(
-//                    oldMovie: Movie,
-//                    newMovie: Movie
-//                ): Boolean {
-//                    return oldMovie.title == newMovie.title
-//                            && oldMovie.isMovie == newMovie.isMovie
-//                            && oldMovie.dateAdded == newMovie.dateAdded
-//                            && oldMovie.movieId == newMovie.movieId
-//                            && oldMovie.language == newMovie.language
-//                            && oldMovie.posterPath == newMovie.posterPath
-//                            && oldMovie.releaseDate == newMovie.releaseDate
-//                            && oldMovie.dateAdded == newMovie.dateAdded
-//                            && oldMovie.isFavorite == newMovie.isFavorite
-//                            && oldMovie.description == newMovie.description
-//                }
-//
-//                @SuppressLint("DiffUtilEquals")
-//                override fun areContentsTheSame(
-//                    oldMovie: Movie,
-//                    newMovie: Movie
-//                ): Boolean {
-//                    return oldMovie == newMovie
-//                }
-//            }
     }
 
 

@@ -11,6 +11,4 @@ interface MovieUseCase {
     fun getFavoriteShow():Flow<List<Movie>>
     fun setFavoriteMovie(movie: Movie,state:Boolean)
 
-//    fun getFavoriteMoviePaging():Flow<PagingData<Movie>>
-//    fun getFavoriteShowPaging():Flow<PagingData<Movie>>
 }

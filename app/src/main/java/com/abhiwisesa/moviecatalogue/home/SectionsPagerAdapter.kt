@@ -16,7 +16,6 @@ class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
         when (position) {
             0 -> MovieFragment()
             1 -> TvShowFragment()
-//            2 -> FavoriteFragment()
             else -> Fragment()
         }
 

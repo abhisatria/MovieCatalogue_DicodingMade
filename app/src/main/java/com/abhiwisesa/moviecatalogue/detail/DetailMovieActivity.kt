@@ -68,15 +68,6 @@ class DetailMovieActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_detail, menu)
         this.menu = menu
-//        val id =
-//            intent.extras?.getString(EXTRA_MOVIE) ?: intent.extras?.getString(EXTRA_SHOW)
-//            ?: (intent.extras?.getParcelable<MovieEntity>(
-//                EXTRA_FAVORITE
-//            )?.id.toString())
-//        detailViewModel.isMovieSaved(Integer.parseInt(id)).observe(this, { result ->
-//            setBookmarkState(result)
-//            isSaved = result
-//        })
         setStatusFavorite(statusFavorite)
         return super.onCreateOptionsMenu(menu)
     }
@@ -87,58 +78,6 @@ class DetailMovieActivity : AppCompatActivity() {
             tempMovie?.let { detailViewModel.setFavoriteTourism(it,statusFavorite) }
             setStatusFavorite(statusFavorite)
         }
-////            val id = intent.extras?.getString(EXTRA_MOVIE) ?: intent.extras?.getString(EXTRA_SHOW)
-////            ?: (intent.extras?.getParcelable<MovieEntity>(
-////                EXTRA_FAVORITE
-////            )?.id.toString())
-//            if (isSaved) {
-////                detailViewModel.deleteMovie(Integer.parseInt(id))
-//            } else {
-//                when {
-//                    movie != null -> {
-//                        var tempMovie: MovieEntity?
-//                        movie?.let { it ->
-//                            tempMovie = MovieEntity(
-//                                it.id,
-//                                it.title,
-//                                it.originalLanguage,
-//                                it.releaseDate,
-//                                it.overview,
-//                                it.posterPath,
-//                                it.voteAverage,
-//                                isMovie,
-//                                false,
-////                                DateHelper.getCurrentDate()
-//                            )
-////                            tempMovie?.let { mov -> detailViewModel.saveMovie(mov) }
-//                        }
-//                    }
-//                    show != null -> {
-//                        var tempShow: MovieEntity?
-//                        show?.let {
-//                            tempShow = MovieEntity(
-//                                it.id,
-//                                it.originalName,
-//                                it.originalLanguage,
-//                                it.firstAirDate,
-//                                it.overview,
-//                                it.posterPath,
-//                                it.voteAverage,
-//                                isMovie,
-//                                false,
-//                                DateHelper.getCurrentDate()
-//                            )
-////                            tempShow?.let { show -> detailViewModel.saveMovie(show) }
-//                        }
-//                    }
-//                    movieEntity != null -> {
-////                        movieEntity?.let { detailViewModel.saveMovie(it) }
-//                    }
-//                }
-//
-//            }
-//            return true
-//        }
         return super.onOptionsItemSelected(item)
     }
 

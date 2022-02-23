@@ -32,9 +32,6 @@ class HomeActivity : AppCompatActivity() {
                     position = 1
                 }
                 R.id.favorite -> {
-//                    supportActionBar?.title = getString(R.string.favorite)
-//                    activityHomeBinding.viewPager.currentItem = 2
-//                    position = 2
                     val uri = Uri.parse("moviescatalogue://favorite")
                     startActivity(Intent(Intent.ACTION_VIEW, uri))
                 }

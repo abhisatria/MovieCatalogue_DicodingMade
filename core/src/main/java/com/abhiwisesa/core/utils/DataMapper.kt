@@ -62,21 +62,6 @@ object DataMapper {
                 dateAdded = it.dateAdded
             )
         }
-//    fun mapEntitiesToDomain(input: PagingData<MovieEntity>): PagingData<Movie> =
-//        input.map {
-//            Movie(
-//                description = it.description,
-//                isFavorite =  it.isFavorite,
-//                movieId = it.id,
-//                title = it.title,
-//                language = it.language,
-//                releaseDate = it.releaseDate,
-//                posterPath = it.posterPath,
-//                voteAverage = it.voteAverage,
-//                isMovie = it.isMovie,
-//                dateAdded = it.dateAdded
-//            )
-//        }
 
     fun mapDomainToEntity(input: Movie) = MovieEntity(
         description = input.description,
