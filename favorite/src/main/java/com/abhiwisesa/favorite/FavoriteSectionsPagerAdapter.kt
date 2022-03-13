@@ -28,7 +28,7 @@ class FavoriteSectionsPagerAdapter(activity: FragmentActivity) :
 
     companion object {
         @StringRes
-        val TAB_TITLES = intArrayOf(R.string.movies, R.string.tv_show)
+        val TAB_TITLES = intArrayOf(com.abhiwisesa.favorite.R.string.movies, com.abhiwisesa.favorite.R.string.tv_show)
     }
 
 }

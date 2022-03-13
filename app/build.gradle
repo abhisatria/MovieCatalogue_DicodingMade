@@ -53,4 +53,7 @@ dependencies {
     implementation "androidx.activity:activity-ktx:1.4.0"
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.4'
+
+    //lotie
+    implementation "com.airbnb.android:lottie:$lottie_version"
 }

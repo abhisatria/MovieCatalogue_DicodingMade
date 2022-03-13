@@ -31,11 +31,14 @@ class ListFavoriteFragment : Fragment() {
             favoriteViewModel.favoriteMovie.observe(viewLifecycleOwner,{data ->
                 adapter.setMovies(data)
                 binding.noDataTextViewFav.visibility = if (data.isNotEmpty()) View.GONE else View.VISIBLE
+                binding.noDataImg.visibility = if (data.isNotEmpty()) View.GONE else View.VISIBLE
+
             })
         } else if (index == 2) {
             favoriteViewModel.favoriteShow.observe(viewLifecycleOwner,{data ->
                 adapter.setMovies(data)
                 binding.noDataTextViewFav.visibility = if (data.isNotEmpty()) View.GONE else View.VISIBLE
+                binding.noDataImg.visibility = if (data.isNotEmpty()) View.GONE else View.VISIBLE
             })
         }
 
