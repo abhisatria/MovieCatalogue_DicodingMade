@@ -19,7 +19,7 @@ class MovieRepository(
 ) : IMovieRepository {
 
     override fun getListTvShow(): Flow<Resource<List<Movie>>> =
-        object : com.abhiwisesa.core.data.NetworkBoundResource<List<Movie>, List<TvShowResponse>>() {
+        object : NetworkBoundResource<List<Movie>, List<TvShowResponse>>() {
             override fun loadFromDB(): Flow<List<Movie>> {
                 return localDataSource.getALlShow().map {
                     DataMapper.mapEntitiesToDomain(it)
@@ -42,7 +42,7 @@ class MovieRepository(
 
 
     override fun getListMovie(): Flow<Resource<List<Movie>>> =
-        object : com.abhiwisesa.core.data.NetworkBoundResource<List<Movie>, List<MovieResponse>>() {
+        object : NetworkBoundResource<List<Movie>, List<MovieResponse>>() {
             override fun loadFromDB(): Flow<List<Movie>> {
                 return localDataSource.getAllMovie().map {
                     DataMapper.mapEntitiesToDomain(it)
